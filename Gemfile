@@ -46,7 +46,11 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 # Use Twitter Bootstrap library for front-end UI and layout
-gem 'bootstrap-sass'
+gem 'bootstrap', '~> 5.2.2'
+# Bootstrap JavaScript can optionally use jQuery
+gem 'jquery-rails'
+# gem provides popper.js assets as a Ruby gem
+gem 'popper_js', '~> 2.11.5'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
