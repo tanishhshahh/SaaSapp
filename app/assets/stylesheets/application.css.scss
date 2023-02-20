@@ -15,6 +15,7 @@
  */
 
 @import 'bootstrap';
+@import "font-awesome";
 
 h1, h2, h3 {
 	// background-clip: text;
@@ -76,4 +77,11 @@ h1, h2, h3 {
 	background-position: center;
 	background-repeat: no-repeat;
 	margin-top: -5px;
+}
+
+.fa-brands {
+	color: darkgray;
+	&:hover {
+		opacity: 0.75;
+	}
 }

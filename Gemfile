@@ -52,6 +52,9 @@ gem 'jquery-rails'
 # gem provides popper.js assets as a Ruby gem
 gem 'popper_js', '~> 2.11.5'
 
+# Use Font Awesome sass gem for adding icons
+gem "font-awesome-sass", "~> 6.3.0"
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", "~> 1.4"
