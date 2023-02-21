@@ -1,1 +1,19 @@
-<h1>Contact form</h1>
+<div class="container">
+    <h3 class="center">Contact</h3>
+    <%= form_for "/contacts" do |f| %>
+        <div class="mb-3">
+            <%= f.label :name, class:"form-label" %>
+            <%= f.text_field :name, class:"form-control" %>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <%= f.label :email, class:"form-label" %>
+            <%= f.text_field :email, class:"form-control" %>
+        </div>
+        <div class="mb-3">
+            <%= f.label :comments, class:"form-label" %>
+            <%= f.text_area :comments, class:"form-control" %>
+        </div>
+        <%= f.submit 'Submit', class:"btn btn-primary" %>
+    <% end %>
+</div>
