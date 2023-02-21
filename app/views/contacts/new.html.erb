@@ -1,19 +1,20 @@
 <div class="bg-color">
         <div class="row justify-content-md-center">
             <div class="col-md-auto">
+                <%= flash[:notice] %>
                 <div class="card", style="width: 25rem;">
                     <h3 class="card-header text-center">Contact Form</h3>
                         <div class="card-body">
-                            <%= form_for "/contacts" do |f| %>
+                            <%= form_for @contact do |f| %>
+                                <div class="mb-3">
+                                    <%= f.label :name, for:"exampleInputName1", class:"form-label" %>
+                                    <%= f.text_field :name, type:"name", class:"form-control", id:"exampleInputName1" %>
+                                </div>
+
                                 <div class="mb-3">
                                     <%= f.label :email, for:"exampleInputEmail1", class:"form-label" %>
                                     <%= f.text_field :email, type:"email", class:"form-control", id:"exampleInputEmail1" %>
                                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                                </div>
-
-                                <div class="mb-3">
-                                    <%= f.label :password, for:"exampleInputPassword1", class:"form-label" %>
-                                    <%= f.text_field :password, class:"form-control", id:"exampleInputPassword1" %>
                                 </div>
 
                                 <div class="mb-3">

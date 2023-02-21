@@ -55,6 +55,9 @@ gem 'popper_js', '~> 2.11.5'
 # Use Font Awesome sass gem for adding icons
 gem "font-awesome-sass", "~> 6.3.0"
 
+# Use hirb for better database table display in console
+gem 'hirb'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", "~> 1.4"
