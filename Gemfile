@@ -46,7 +46,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 # Use Twitter Bootstrap library for front-end UI and layout
-gem 'bootstrap', '~> 5.2.2'
+gem 'bootstrap', '~> 5.2.3'
 # Bootstrap JavaScript can optionally use jQuery
 gem 'jquery-rails'
 # gem provides popper.js assets as a Ruby gem
