@@ -58,11 +58,9 @@ gem "font-awesome-sass", "~> 6.3.0"
 # Use hirb for better database table display in console
 gem 'hirb'
 
-gem 'pg'
-
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-  gem "sqlite3", "~> 1.4"
+  gem "sqlite3", "~> 1.3"
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
@@ -80,7 +78,7 @@ end
 
 group :production do
   # Use the PostgreSQL gem for Herkou production server
-  # gem 'pg'
+  gem 'pg'
 end
 
 group :test do
