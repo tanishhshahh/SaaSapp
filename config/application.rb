@@ -21,4 +21,4 @@ module Saasapp
     config.secret_key_base = '<%= ENV["SECRET_KEY_BASE"] %>'
   end
 end
-config.secret_key_base = '<%= ENV["SECRET_KEY_BASE"] %>'
+# config.secret_key_base = '<%= ENV["SECRET_KEY_BASE"] %>'
